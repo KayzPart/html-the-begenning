@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap');
+* {
+    padding: 0;
+}
+/* Général  */
+body{
+    background-image: repeating-linear-gradient(135deg, rgb(93,93,93, 0.1) 0px, rgba(93,93,93, 0.1) 2px, transparent 2px, transparent 4px), linear-gradient(90deg, #bcaaa4, #bcaaa4);
+    height: 100vh;
+}
+h1, h2{
+    font-family: 'Goudy Bookletter 1911', serif;
+    color: #443f3d;
+}
+p{
+    font-family: 'Libre Caslon Text', serif;
+}
+marquee{
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 20px;
+}
+/* Header */
+header{
+    width: auto ;
+    height: 105px;
+    background-color: #8c7b75;
+    margin: 0;
+    margin-bottom: 11px;
+}
+#logo-site-header{
+    width: 9vw;
+    height: auto;
+    transform: translate(25px);
+}
+/* Class */
+.front-end-strong{
+    color: #91511d;
+}
+/* Image */
+#fiche-metier{
+    margin-top: 30%;
+    margin-left: 20px;
+    border-radius: 25px;
+    border: 5px solid #755e4c;
+}
+/* Footer */
+footer{
+    width: 100%;
+    height: auto;
+    background-color:#efdcd5;
+    margin: 0;
+    margin-top: 9px;
+    text-align: center;
+    padding-top: 40px;
+}
+#logo-site-footer{
+    width: 6vw;
+    height: auto;
+    transform: translate(65px, -30px);
+}
+/* Media Querry */
+@media (max-width: 1050px){
+    #logo-site-header{
+        width: 15vw;
+        height: auto;
+    }
+    #fiche-metier{
+        height: auto;
+        margin-left: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    h1, h2{
+        font-size: 50px;
+    }
+    p{
+        font-size: 25px;
+    }
+    ul{
+        font-size: 25px;
+    }
+    marquee{
+        font-size: 25px;
+    }
+}
+@media (max-width: 800px){
+    #fiche-metier{
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+    #logo-site{
+        width: 20vw;
+        height: auto;
+    }
+    #fiche-metier{
+        margin-left: 20px;
+    }
+}
+@media (max-width:768px){
+    #logo-site-header{
+        width: 20vw;
+        height: auto;
+    }
+    #logo-site-footer{
+        width: 9vw;
+        height: auto;
+    }
+}
+@media (max-width:550px){
+    #logo-site-header{
+        width: 30vw;
+        height: auto;
+    }
+    h1, h2{
+        font-size: 30px;
+    }
+    p{
+        font-size: 15px;
+    }
+    ul{
+        font-size: 15px;
+    }
+    #fiche-metier{
+        margin-left: 15px;
+    }
+    marquee{
+        font-size: 15px;
+    }
+}
+ @media (max-width: 500px){
+     #fiche-metier{
+         width: 85vw;
+         height: auto;
+         margin: 10px 0px 10px 20px;
+     }
+     h1, h2{
+         font-size: 30px;
+     }
+     p{
+         font-size: 15px;
+     }
+     ul{
+         font-size: 15px;
+     }
+    marquee{
+        font-size: 12px;
+    }
+ }
+ @media (max-width: 420px){
+     #logo-site-header{
+         width: 40vw;
+         height: auto;
+     }
+     marquee{
+         font-size: 10px;
+     }
+     .link-footer{
+         font-size: 10px;
+     }
+     #logo-site-footer{
+         margin-left: 29%;
+     }
+ }
+@media (max-width:400px){
+    #logo-site-header{
+        width: 40vw;
+        height: auto;
+        margin-top: 10px;
+    }
+    #fiche-metier{
+        width: 85vw;
+        height: auto;
+        margin-left: 18px;
+        margin-top:20px;
+        margin-bottom: 20px;    
+    }
+    h1, h2{
+        font-size: 30px;
+    }
+    p{
+        font-size: 15px;
+    }
+    ul{
+        font-size: 15px;
+    }
+    marquee{
+        font-size: 12px;
+    }
+    .link-footer{
+        font-size: 12px;
+    }
+    #logo-site-footer{
+        margin-left: 27%;
+    }
+}
+@media (max-width:350px){
+    #logo-site-header{
+        width: 40vw;
+        height: auto;
+        margin-top: 20px;
+    }
+    h1, h2{
+        font-size: 30px;
+    }
+    p{
+        font-size: 15px;
+    }
+    ul{
+        font-size: 15px;
+    }
+    #fiche-metier{
+        width: 85vw;
+        height: auto;
+        margin-left: 12px;
+        margin-top: auto;
+    }
+    marquee{
+        font-size: 10px;
+    }
+@media (max-width:300px){
+    #logo-site{
+        width: 55vw;
+        height: auto;
+    }
+    h1, h2{
+        font-size: 25px;
+    }
+    p{
+        font-size: 12.5px;
+    }
+    ul{
+        font-size: 12.5px;
+    }
+    #fiche-metier{
+        margin-left: 10px;
+    }
+    marquee{
+        font-size: 9px;
+    }
+}
