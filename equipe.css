@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Général */
+body{
+    background-image: repeating-linear-gradient(135deg, rgb(93,93,93, 0.1) 0px, rgba(93,93,93, 0.1) 2px, transparent 2px, transparent 4px), linear-gradient(90deg, #bcaaa4, #bcaaa4);
+    height: 100vh;
+}
+h1, h2{
+    font-family: 'Goudy Bookletter 1911', serif;
+    color: #443f3d;
+}
+p{
+    font-family: 'Libre Caslon Text', serif;
+}
+marquee{
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 20px;
+}
+/* Header */
+header{
+    width: auto ;
+    height: 105px;
+    background-color: #8c7b75;
+    margin: 0;
+    margin-bottom: 11px;
+}
+#logo-site-header{
+    width: 9vw;
+    height: auto;
+    transform: translate(25px);
+}
+/* button */
+#btn-elvis{
+    /* -webkit-transform: scale(1.25); */
+	transform: scale(1.1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+#btn-elvis:hover{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+#btn-tiff{
+    /* -webkit-transform: scale(1.25); */
+	transform: scale(1.1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+#btn-tiff:hover{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+/* Footer */
+footer{
+    width: 100%;
+    height: auto;
+    background-color:#efdcd5;
+    margin: 0;
+    margin-top: 9px;
+    text-align: center;
+    padding-top: 40px;
+}
+#logo-site-footer{
+    width: 6vw;
+    height: auto;
+    transform: translate(65px, -30px);
+}
+/* media querry */
+@media (max-width:1200px){
+    #reseau{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #reseau-sociau{
+        margin-left: 185px;
+    }
+}
+@media (max-width:768px){
+    .card-body{
+        padding: 0%;
+    }
+    #reseau-sociau{
+        margin: 0%;
+    }
+    #elvis{
+        width: 100px;
+    }
+    #btn-elvis{
+        padding: 5px 80px 5px 5px;
+    }
+    #tiff{
+        width:100px;
+    }
+    #btn-tiff{
+        padding: 0px 60px 0px 5px;
+        
+    }
+    #logo-site-header{
+        width: 30vw;
+        height: auto;
+    }
+    #logo-site-footer{
+        width: 9vw;
+        height: auto;
+    }
+}

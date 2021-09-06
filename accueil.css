@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Général */
+body{
+    background-image: repeating-linear-gradient(135deg, rgb(93,93,93, 0.1) 0px, rgba(93,93,93, 0.1) 2px, transparent 2px, transparent 4px), linear-gradient(90deg, #bcaaa4, #bcaaa4);
+}
+h1, h2{
+    font-family: 'Goudy Bookletter 1911', serif;
+    color: #443f3d;
+}
+p{
+    font-family: 'Libre Caslon Text', serif;
+}
+marquee{
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 20px;
+}
+/* Header */
+header{
+    width: auto ;
+    height: 105px;
+    background-color: #8c7b75;
+    margin: 0;
+    margin-bottom: 11px;
+}
+#logo-site-header{
+    width: 9vw;
+    height: auto;
+    transform: translate(25px);
+}
+
+/* Class */
+.video{
+    position: relative;
+}
+/* Button */
+#btn-secondary-accueil{
+    position: absolute;
+    bottom: 10%;
+    left: 46.5%;
+    -webkit-transform: scale(1.25);
+	transform: scale(1.25);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.btn-secondary:hover{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+
+}
+/* TheBeginning */
+#thebeginning{
+    font-size: 90px;
+    text-decoration: underline overline #efdcd5;
+    color: rgb(160, 19, 19);
+    font-weight: bold;
+    font-family: Brush Script Std;
+    display: flex;
+    justify-content: center;
+    transform: translate(0, -300%);
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-direction: alternate;
+}
+/* Footer */
+footer{
+    width: 100%;
+    height: auto;
+    background-color:#efdcd5;
+    margin: 0;
+    margin-top: 9px;
+    text-align: center;
+    padding-top: 40px;
+}
+#logo-site-footer{
+    width: 6vw;
+    height: auto;
+    transform: translate(65px, -30px);
+}
+/* Keyframes */
+@keyframes slidein {
+    from {
+      margin-left:100%;
+      width:300%
+    }
+  
+    to {
+      margin-left:0%;
+      width:100%;
+    }
+  }
+  /* media querry */
+@media (min-width: 1030px){
+    body{
+        height: 100vh;
+    }
+    #logo-site-header{
+        width: 9.5vw;
+        height: auto;
+    }
+    .btn{
+        width: 13vw;
+        position: absolute;
+        bottom: 40%;
+        left: 45%;
+    }
+    .video{
+        margin-top: 150px;
+        height: 71vh;
+    }
+}
+}
+@media (max-width: 1025px){
+    body{
+        height: 100vh;
+    }
+    #logo-site-header{
+        width: 15vw;
+        height: auto;
+    }
+    .btn{
+        width: 13vw;
+        position: absolute;
+        bottom: 40%;
+        left: 45%;
+    }
+    .video{
+        margin-top: 150px;
+        height: 71vh;
+    }
+}
+@media (max-width: 800px){
+    #thebeginning{
+        font-size: 50px;
+        transform: translate(0, -450px);
+    }
+    .btn{
+        position: absolute;
+        left: 35%;
+        bottom: 50%;
+    }
+}
+@media (max-width: 768px) {
+    #logo-site-header{
+        width: 20vw;
+        height: auto;
+    }
+    #logo-site-footer{
+        width: 10vw;
+        height: auto;
+        margin-left: 10px
+    } 
+    #thebeginning{
+        font-size: 70px;
+        transform: translate(0, -450px);
+    }
+    .btn{
+        width: 15vh;
+        position: absolute;
+        left: 42.5%;
+        bottom: 5%;
+    }
+    .video{
+        margin-top: 150px;
+    }
+}
+@media (max-width: 550px){
+    #logo-site-header{
+        width: 23vh;
+    }
+    #logo-site-footer{
+        margin-left: 0px;
+    }
+}
+@media (max-width: 420px){
+    .video{
+        margin-top: 0%;
+    }
+    footer{
+        margin-top: 0%;
+    }
+    #logo-site-footer{
+        width: 8vw;
+        height: auto;
+        margin-left: 30%;
+    }
+    .btn{
+        position: absolute;
+        left: 35%;
+        bottom: 20%;
+    }
+    #thebeginning{
+        transform: translate(0px, -350px); 
+        font-size: 50px
+    }
+    #logo-site-header{
+        width: 33vw;
+        height: auto;
+        margin-top: 20px;
+    }
+@media (max-width:360px){
+    .video{
+        margin-top: 0%;
+    }
+    footer{
+        margin-top: 0%;
+    }
+    #logo-site-header{
+            width: 36vw;
+            height: auto;
+        }
+    .btn{
+            position: absolute;
+            bottom: 20%;
+        }
+        #thebeginning{
+            font-size: 50px
+        }
+    }
+@media (max-width: 320px){
+    .video{
+        margin-top: 5px;
+    }
+    #logo-site-footer{
+        margin-left: 30%;
+        margin-bottom: 0%;
+    }
+    .btn{
+        position: absolute;
+        left: 30%;
+        bottom: 25%;
+        width: 23vh;
+    }
+    #thebeginning{
+        transform: translate(0px, -350px); 
+    }
+    #logo-site-header{
+        width: 35vw;
+        height: auto;
+        margin-top: 30px;
+    }
+    #thebeginning{
+        font-size: 50px
+    }
+    footer{
+        margin-top: 0%;
+    }
+}
