@@ -31,7 +31,8 @@ header{
 }
 /* row */
 .row{
-    margin-top: 130px;
+    margin-top: 110px;
+    margin-bottom: 110px;
 }
 /* ID */
 #art-elvis{
@@ -39,6 +40,7 @@ header{
     border-radius: 25px;
     border: solid 5px #cfd8dc;
     height: 25vh;
+    
 }
 #art-tiff{
     background-color: #cfd8dc;
@@ -47,6 +49,8 @@ header{
     height: 25vh;
 }
 #recap-art{
+    width: 350px;
+    height: 180px;
     background-color: #d7ccc8;
     border-radius: 25px;
     border: solid 5px #efdcd5;
@@ -63,47 +67,34 @@ header{
 	-webkit-filter: sepia(0);
 	filter: sepia(0);
 }
-.btn{
-    height: 8vh;
+.btn-art{
+    height: 70px;
+    width: auto;
+    padding: 15px;
+    border-radius: 10px;
+    color: #dfdcdb;
 }
-.btn-secondary{
-    background: 
-       linear-gradient(-45deg, transparent calc(100%/3), rgba(0, 0, 0, 0.5), transparent calc(200%/3)) 
-       bottom right/350% 100% no-repeat;
-    transition: 0.5s linear, background-size 0s 0.5s;
-    -webkit-transform: scale(1.25);
-	transform: scale(1.25);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-.btn-secondary:hover{
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    background-position: bottom left;
-    background-size: 0 0;
-}
+
 /* Footer */
 footer{
     width: 100%;
     height: auto;
     background-color:#efdcd5;
     margin: 0;
-    margin-top: 135px;
     text-align: center;
     padding-top: 40px;
 }
-#logo-site-footer{
+.logo-site-footer{
     width: 6vw;
     height: auto;
-    transform: translate(65px, -30px);
 }
-.link {
+.link-art {
     background: 
        linear-gradient(90deg, currentColor 50%, transparent 0) 
        0 100%/200% 3px repeat-x;
     transition: 99999s linear;
 }
-.link:hover {
+.link-art:hover {
     background-position: 8000px 100%;
     transition: 30s;
 }
@@ -266,7 +257,7 @@ footer{
         margin-top: 20px;
     }
 }
-@media (max-width:350px){
+@media (max-width:320px){
     body{
         height: 100vh;
     }
@@ -284,13 +275,32 @@ footer{
         width: auto;
     }
     #recap-art{
-        position: absolute;
-        top: 550px;
+        position: relative;
+        top: 100px;
         left: 30px;
         height: 30vh;
     }
-    .link-art{
-        margin-left: 0%;
+    .link-art-1{
+        position: absolute;
+        bottom: 300px;
+        left: 10px;
+        background: 
+           linear-gradient(90deg, currentColor 50%, transparent 0) 
+           0 100%/200% 3px repeat-x;
+        transition: 9s linear;
+    }
+    .link-art-2{
+        position: absolute;
+        bottom: 130px;
+        left: 10px;
+        background: 
+           linear-gradient(90deg, currentColor 50%, transparent 0) 
+           0 100%/200% 3px repeat-x;
+        transition: 9s linear;
+    }
+    .link-art-1, .link-art-2:hover {
+        background-position: 8000px 100%;
+        transition: 3s;
     }
     .btn-art{
         font-size: 8px;

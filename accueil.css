@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -31,17 +32,19 @@ header{
     height: auto;
     transform: translate(25px);
 }
-
 /* Class */
-.video{
-    position: relative;
+#video-acceuil{
+    height: 650px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 /* Button */
 .btn-secondary{
     text-align: center;
+    padding: 5px;
     border-radius: 5px;
     position: absolute;
-    bottom: 10%;
+    bottom: 40%;
     left: 46.5%;
     -webkit-transform: scale(1.25);
 	transform: scale(1.25);
@@ -86,14 +89,14 @@ footer{
 @keyframes slidein {
     from {
       margin-left:100%;
-      width:300%
+      width:300%;
     }
   
     to {
       margin-left:0%;
       width:100%;
     }
-  }
+}
   /* media querry */
 @media (min-width: 1030px){
     body{
@@ -144,7 +147,7 @@ footer{
         bottom: 50%;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 768px){
     #logo-site-header{
         width: 20vw;
         height: auto;
@@ -152,7 +155,7 @@ footer{
     #logo-site-footer{
         width: 10vw;
         height: auto;
-        margin-left: 10px
+        margin-left: 10px;
     } 
     #thebeginning{
         font-size: 70px;
@@ -195,13 +198,13 @@ footer{
     }
     #thebeginning{
         transform: translate(0px, -350px); 
-        font-size: 50px
+        font-size: 50px;
     }
     #logo-site-header{
         width: 33vw;
         height: auto;
         margin-top: 20px;
-    }
+}
 @media (max-width:360px){
     .video{
         margin-top: 0%;
@@ -217,26 +220,30 @@ footer{
             position: absolute;
             bottom: 20%;
         }
-        #thebeginning{
-            font-size: 50px
+    #thebeginning{
+            font-size: 50px;
         }
-    }
+}
 @media (max-width: 320px){
-    .video{
-        margin-top: 5px;
+    #video-acceuil{
+        height: 300px;
+    }
+    video{
+        height: 250px;
+        margin-top: 25px;
     }
     #logo-site-footer{
         margin-left: 30%;
         margin-bottom: 0%;
     }
-    .btn{
+    .btn-secondary{
         position: absolute;
         left: 30%;
         bottom: 25%;
         width: 23vh;
     }
     #thebeginning{
-        transform: translate(0px, -350px); 
+        transform: translate(0px, -200px); 
     }
     #logo-site-header{
         width: 35vw;
@@ -245,6 +252,7 @@ footer{
     }
     #thebeginning{
         font-size: 50px;
+        font-family: Brush Script Std;
     }
     footer{
         margin-top: 0%;
