@@ -18,24 +18,87 @@ marquee{
 }
 /* Header */
 header{
-    width: auto ;
-    height: 105px;
     background-color: #8c7b75;
-    margin: 0;
-    margin-bottom: 11px;
 }
-#logo-site-header{
-    width: 9vw;
-    height: auto;
-    transform: translate(25px);
+.logo-site-header{
+    height: 6.8vh;
 }
-/* row */
+/* Footer */
+footer{
+    background-color:#efdcd5;
+    text-align: center;
+    padding-top: 10px;
+}
+.logo-site-footer{
+    height: 6vh;
+}
+/* Bloc article */
+.article{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.click{
+    height: 4vh;
+}
+.art-elvis{
+    border: solid 2px #443f3d;
+    border-radius: 40%;
+    padding-top: 50px;
+    text-align: center;
+}
+.art-elvis a{
+    font-size: 20px;
+    color: #a86c18;
+    font-weight: bold;
+    text-decoration: none;
+}
+#img-art-elvis{
+    width: 50%;
+    border-radius: 10%;
+}
+.art-tiff{
+    border: solid 2px #443f3d;
+    border-radius: 40%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.art-tiff a{
+    font-size: 20px;
+    color: #a86c18;
+    font-weight: bold;
+    text-decoration: none;
+}
+#img-art-tiff{
+    width: 50%; 
+    border-radius: 10%;
+}
+.p-art{
+    padding-top: 30px;
+}
+hr{
+    font-size: 15px;
+}
+.article button a{
+    text-decoration: none;
+    color: #443f3d;
+    font-weight: bold;
+}
+.article button{
+    padding: 25px;
+    border-radius: 50%;
+    border: none;
+    background-color: #a86c185d;
+}
+/* row
 .row{
     margin-top: 110px;
     margin-bottom: 110px;
 }
 /* ID */
-#art-elvis{
+/* #art-elvis{
     background-color: #9ea7aa;
     border-radius: 25px;
     border: solid 5px #cfd8dc;
@@ -55,9 +118,9 @@ header{
     border-radius: 25px;
     border: solid 5px #efdcd5;
     transform: translate(0, -50%);
-}
+} */
 /* CLASS */
-.anim-img{
+/* .anim-img{
 	-webkit-filter: sepia(100%);
 	filter: sepia(100%);
 	-webkit-transition: .3s ease-in-out;
@@ -73,22 +136,10 @@ header{
     padding: 15px;
     border-radius: 10px;
     color: #dfdcdb;
-}
+} */ 
 
-/* Footer */
-footer{
-    width: 100%;
-    height: auto;
-    background-color:#efdcd5;
-    margin: 0;
-    text-align: center;
-    padding-top: 40px;
-}
-.logo-site-footer{
-    width: 6vw;
-    height: auto;
-}
-.link-art {
+
+/* .link-art {
     background: 
        linear-gradient(90deg, currentColor 50%, transparent 0) 
        0 100%/200% 3px repeat-x;
@@ -97,13 +148,8 @@ footer{
 .link-art:hover {
     background-position: 8000px 100%;
     transition: 30s;
-}
-/* Media Querry */
-/* @media (max-width:1000px){
-    #art-elvis{
-        height: 28vh;
-     } 
 } */
+/* Media Querry */
 @media (max-width: 1030px){
     #recap-art{
         height: 220px;

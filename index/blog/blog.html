@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Blog</title>
       <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../bootstrap - Copie.css">
         <link rel="stylesheet" href="./blog.css">
     </head>
     <body>
@@ -15,7 +15,7 @@
             <nav class="navbar navbar-expand-md navbar-light">
                 <div class="container-fluid">
     <!-- Logo-navbar -->
-                    <a class="navbar-brand" href="../../index.html"><img class="logo-site-header" src="../../image video/logovalidok.png" alt="logo-site" class="img-responsive" height="80px" width="180px"></a>
+                    <a class="navbar-brand" href="../../index.html"><img class="logo-site-header" src="../../image video/logo-miniature.png" alt="logo-site"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -45,7 +45,42 @@
 <!-- Fin navbar -->
         </header>
 <!-- Fin Header -->
-        <div class="row col-sm-12">
+        <div class="row article">
+            <div class="col-5 art-elvis">
+                <img id="img-art-elvis"src="../../image video/IMAGE ARTCILE ELVIS.jpg" alt="">
+                <p class="p-art">
+                    Sur cet article, nous allons voir les différents formats d'images les plus courants, 
+                    <br>
+                    leur caractéristique et le domaine d'utilisation suivant nos besoins ...
+                </p>
+                <a href="./elvis/elvis.html">Lire la suite ...
+                    <img class="click" src="../../image video/click.png" alt="">
+                </a>
+            </div>
+            <div class="col-5 art-tiff">
+                <img id="img-art-tiff" src="../../image video/IMAGE ARTICLE TIFF.jpg" alt="">
+                <p class="p-art">
+                    Ici, nous allons parler du développeur Front-End, qui est-il, que fait-il ...
+                </p>
+                <a href="./tiff/tiff.html">Lire la suite ...
+                    <img class="click" src="../../image video/click.png" alt="">
+                </a>
+            </div>
+            <div class="col-12 recap-art">
+                <hr>
+                <h1 class="text-center pt-3">Tous nos articles</h1>
+                <div class="article">
+                    <button>
+                        <a href="./elvis/elvis.html">Formats d'images</a>
+                    </button>
+                    <button>
+                        <a href="./tiff/tiff.html">Front-End</a>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <!-- <div class="row col-sm-12">
             <div id="art-elvis" class="col-5 pt-2 col-md-8 d-flex align-items-center">
                 <img class="anim-img col-md-2 col-4" src="../../image video/IMAGE ARTCILE ELVIS.jpg" alt="">
                 <p class="p-art col-5 ms-2">
@@ -65,7 +100,7 @@
                 <a class="btn-art btn-secondary text-decoration-none mt-5 col-3" href="./tiff/tiff.html" role="button">Article <br>
                     Front-End</a>
             </div>
-        </div>
+        </div> -->
 
 <!-- Footer      -->
         <footer class="footer">
@@ -79,7 +114,7 @@
                 <span>/</span>
                 <a class="link-footer link-dark text-decoration-none fw-bold" href="../contact/contact.html">Contact</a>
             </div>
-            <img class="logo-site-footer" class="d-flex justify-content-start" src="../../image video/logovalidok.png" alt="logo-site">
+            <img class="logo-site-footer" class="d-flex justify-content-start" src="../../image video/logo-miniature.png" alt="logo-site">
         </footer>
 
 
